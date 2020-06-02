@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle Rotation</title>
+</head>
+<body>
+    <script>
+        function Number (a, b){
+
+            var flag = true;
+
+            if ( 2<= a <= 50 && 2 <= b <= 50) {
+                var D1, D2, d1 , d2, s;
+
+                D1 = parseInt(Math.floor(a / (Math.sqrt(2))  + 1));
+                D2 = parseInt(Math.floor(b / (Math.sqrt(2))  + 1));
+
+                d1 = parseInt(Math.floor(((D1 - 2 * Math.sqrt(2)/2)) + 1));
+                d2 = parseInt(Math.floor(((D2 - 2 * Math.sqrt(2)/2)) + 1));
+
+                s = (D1 * D2) + (d1 * d2); 
+
+                flag = true;
+            }
+            else{
+                flag = false;
+            }
+
+            if (flag == true) {
+                console.log(a + ' and ' + b + ' Rectangle Rotation is  ' + s);
+            }
+            else{
+                console.log('a and b min max is 2 and 50');
+            }
+        }
+
+        Number(6 , 4);
+        Number(30 , 2);
+        Number(8 , 6);
+        Number(16 , 20);
+        Number(20 , 30);
+        Number(50,4);
+        Number(2,2);
+        Number(50, 50);
+        Number(38 , 42);
+    </script>
+</body>
+</html>

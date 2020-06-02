@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smooth</title>
+</head>
+<body>
+    <script>
+        function arr(a){
+            var flag = true;
+
+            if (a.length % 2 == 0) {
+                if (a[0]==a[a.length-1] && a[0]==(a[a.length/2-1] + a[a.length/2])) {
+                    flag = true;
+                }
+                else{
+                    flag = false;
+                }
+                
+            }
+            else if (a.length % 2 != 0) {
+                if (a[0]==a[a.Length-1] && a[0] == a[(a.Length-1)/2]) {
+                    flag = true;
+                }
+                else{
+                    flag = false;
+                }
+            }else {
+                return true;
+            }
+            if (flag == true) {
+                console.log(a + 'Is Smoth');
+            }
+            else {
+                console.log(a + 'Is not Smoth');
+            }
+        }
+        arr([7, 2, 2, 5, 10, 7]);
+        arr([-5, -5, 10]);
+        arr([4, 2]);
+        arr( [45, 23, 12, 33, 12, 453, -234, -45]);
+        arr([-12, 34, 40, -5, -12, 4, 0, 0, -12]);
+        arr([9, 0, 15, 9]);
+        arr([-6, 6, -6]);
+        arr([26, 26, -17]);
+        arr([-7, 5, 5, 10]);
+        arr([3, 4, 5]);
+    </script>
+</body>
+</html>
