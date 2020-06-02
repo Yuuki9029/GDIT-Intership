@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crossword</title>
+</head>
+<body>
+    <script>
+        // function words(i){
+        //     var flag = 0;
+        //     var a, b , c, d;
+        //     if (i.length != 4) {
+        //         console.log('Word only = 4')
+        //     }
+        //     else {
+        //         for ( a = 0; a < i.length; a++){
+        //             for ( b = 0; b < i.length; b++){
+        //                 for( c = 0; c < i.length; c++){
+        //                     for ( d = 0; d < i.length; d++){
+        //                         if ( a != b && a != c && a != d && b != c && b != d && c != d ) {
+        //                             flag += formation([i[a] + i[b] + i[c] + i[d]]);
+                                    
+        //                         }
+        //                     }
+        //                 }
+        //             }
+                    
+        //         }
+        //     }
+            
+        //         return flag;
+            
+        //     function formation(){
+        //         var flag = 0;
+        //         var a1,a2,b1,b2,c1,c2,d1,d2;
+
+        //         for( a1 = 0; a1 < i.length[0]; a1 ++){
+        //             for (a2 = a1 + 1; a2 < i.length[0]; a2++){
+        //                 for ( b1 = 0; b1 < i.length[1]; b1++){
+        //                     for( b2 = b1 + 1; b2 < i.length[1]; b2++){
+        //                         for( c1 = 0 ; c1 < i.length[2]; c1++){
+        //                             for(c2 = c1 + 1; c2 < i.length[2]; c2++){
+        //                                 for(d1 = 0; d1 < i.length[3]; d1++){
+        //                                     for(d2 = d1 + 1; d2 < i.length[3]; d2++){
+        //                                         a2 = a1 + (c2 - c1);
+        //                                         b2 = b1 + (d2 - d1);
+        //                                         if (a1 <= i.length[2] && a2 <= i.length[2] && b1 <= i.length[3] && b2 <= i.length[4]) {
+        //                                             flag += [i.length[0] == i.length[1] && i.length[2] == i.length[3]];
+        //                                             {
+        //                                                 flag ++;
+        //                                                 console.log(flag);
+        //                                             }
+        //                                         }
+        //                                     }
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //         return flag;
+        //     }
+        // }
+        // words(["crossword","square","formation","something"]);
+        // var a = ["crossword","square","formation","something"];
+        // function words(a){
+        //     let flag = 0;
+
+        //     for ( let c1 = 2; c1 < a[0].length; c1 ++)
+        //     console.log(a[0][c1]);
+        //     {
+        //         for (let c2 = 0; c2 < a[1].length - 2 ;c2 ++ ){
+        //             if (a[0][c1] == a[1][c2]) {
+        //                 // console.log(a[0][c1]);
+        //                 for (let c3 = 2; c3 < a[2].length; c3++){
+        //                     for (let c12 = c1 + 2; c12 < a[0].length - 2; c12++){
+        //                         if (a[2][c3] == a[0][c12]) {
+        //                             for ( let c4 = 2; c4 < a[3].length; c4++){
+        //                                 for( let c42 = c4 + 2; c42 < a[3].length - 2; c42++){
+        //                                     if (a[3][c4] == a[1][c22] && a[2][c32] == a[3][c42]) flag++;
+        //                                     // console.log(a[3][c4]);
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //         // return flag;
+        //     }
+        // }
+        // // function run(a){
+        // //     let flag = 0;
+            
+            
+        // // }
+
+
+
+        function crosswordFormation(words){
+            var flag = 0;
+
+            for ( let i = 0; i < words.length; i++ ){
+                for( let j = 0; j < words.length; j ++){
+                    for (let k = 0; k < words.length ; k ++){
+                        for ( let l = 0; l < words.length; l++){
+                            if (j != j && i != k && i != l && j != k && j != l && k != l) {
+                                flag += run(words[i],words[j],words[k],words[l]);
+                            }
+                        }
+                    }
+                }
+            }
+            return flag;
+        }
+
+        function run (words){
+            var flag = 0;
+            
+            for ( let c1 = 0; c1 < words[0].length ; c1++){
+                for(  let c12 = c1 + 1; c21 < words[0].length; c12++){
+                    for ( let c2 = 0; c2 < words[1].length; c2++){
+                        for( let c22 = c2 + 1; c22 < words[1].length; c22++){
+                            for( let c3 = 0; c3 < words[2].length; c3++){
+                                for( let c32 = c3 + 1; c32 < words[2].length; c32++){
+                                    for( let c4 = 0; c4 < words[3].length; c4++){
+                                        for( let c42 = c4 + 1; c42 < words[3].length; c42++)
+                                        c32 = c3 + ( c22 - c2);
+                                        c42 = c4 + ( c12 - c1);
+                                        console.log(word[3][42]);
+                                        {
+                                            if (words[0][c1] == words[1][c2]
+                                                && words[2][c3] == words[0][c12]
+                                                && words[2][c32] == words[3][c42]
+                                                && words[3][c4] == words[1][c22]) flag ++; {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return flag;
+        }
+        var words = ["crossword","square","formation","something"];
+        console.log(crosswordFormation(words));
+    </script>
+</body>
+</html>

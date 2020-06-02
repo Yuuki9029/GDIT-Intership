@@ -1,0 +1,26 @@
+#dropdown{
+    width: 150px;
+}
+#dropdown li{
+    line-height: 50px;
+    background: pink;
+    list-style: none;
+}
+#dropdown li:hover{
+    background: rgb(250, 216, 222);
+}
+#dropdown li a{
+    text-decoration: none;
+}
+#dropdown ul{
+    display: none; 
+    padding: 0;
+    background: rgb(255, 226, 231);
+}
+#dropdown ul li {
+    background: rgb(255, 226, 231);
+}
+.list {
+    display: inline-block;
+    float: left;
+}

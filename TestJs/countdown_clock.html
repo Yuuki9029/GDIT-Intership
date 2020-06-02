@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Down Clock</title>
+    <style>
+        span{
+            border: solid 1px black;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <script src="./countdown_clock.js"></script>
+    <div>
+        <b>Input Data</b><br/>
+        <input type="text" name="" id="h_val" placeholder="Hour" /> <br/>
+        <input type="text" name="" id="m_val" placeholder="Mimute" /> <br/>
+        <input type="text" name="" id="s_val" placeholder="Set" /> <br/>
+        <input type="button" value="start" onclick="start()"/>
+        <input type="button" value="stop" onclick="stop()"/> <br/>
+    </div>
+    <div>
+        <span id="h">Hour</span>
+        <span id="m">Minute</span>
+        <span id="s">Set</span>
+    </div>
+</body>
+</html>
