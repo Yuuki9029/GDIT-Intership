@@ -1,1 +1,1 @@
-# GDIT_Intership
+About Intership at Global Design IT 2020
