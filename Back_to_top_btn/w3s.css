@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Comic Sans Ms";
+    margin: 0;
+}
+header{
+    background-color: aquamarine;
+    color: white;
+    height: 300px;
+    padding: 80px;
+    text-align: center;
+}
+.narbar{
+    overflow: hidden;
+    background-color: rgb(88, 88, 88);
+    position: sticky;
+    top: 0;
+}
+.narbar a{
+    color: white;
+    float: left;
+    display: block; 
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.narbar a.right{
+    float: right;
+}
+.narbar a:hover{
+    background-color: #e4d1cc;
+    color: black;
+}
+.narbar a.left{ 
+    background-color: rgb(160, 160, 160);
+}
+.colums{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about{
+    flex: 30%;
+    padding: 20px;
+    background-color: #d3ccca;
+}
+.content{
+    flex: 70%;
+    padding: 20px;
+}
+.img{
+    background-color: #969696;
+    width: 100%;
+    padding: 20px;
+}
+footer{
+    background-color: #b3b1b1;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+}
+#back_top_top_btn{
+    right: 0;
+    bottom: 100px;
+    position: fixed;
+    cursor: pointer;
+}
