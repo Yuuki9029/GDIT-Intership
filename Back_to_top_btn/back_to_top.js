@@ -1,13 +1,17 @@
-var btn = document.querySelector('.fa-arrow-up');
-    var height = self.pageYOffset;
+var btn = document.querySelector('#back_top_top_btn');
+    var height = window.pageYOffset;
 
+    var scrollpos = 0;
     window.onscroll = () => {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        var windowY = window.scrollY;
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 
+            && windowY < scrollpos) {
             btn.style.display = 'block';
         }
         else{
-            btn.style.display = 'none';
+            btn.style.display = 'none'
         }
+        scrollpos = windowY;
     }
     btn.onclick = () => {
         var possion = height;
@@ -19,3 +23,4 @@ var btn = document.querySelector('.fa-arrow-up');
             }
         },50);
     }
+
