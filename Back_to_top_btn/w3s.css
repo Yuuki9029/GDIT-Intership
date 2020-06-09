@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     font-family: "Comic Sans Ms";
     margin: 0;
@@ -80,13 +79,12 @@ footer{
 .hidden{
     opacity: 0;
     /* transform: translateY(100%); */
-    transition: 1s;
-
+    /* transition: 1s; */
 }
 .block{
     opacity: 1;
     /* transform: translateY(-50%); */
-    transition: 1s;
+    /* transition: 1s; */
 }
 .fix{
     right: 0;
@@ -95,6 +93,6 @@ footer{
 }
 .absolute{
     right: 0;
-    bottom: -630px;
+    bottom: -585px;
     position: absolute;
 }
