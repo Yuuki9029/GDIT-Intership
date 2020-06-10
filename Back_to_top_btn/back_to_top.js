@@ -8,16 +8,25 @@ var btn = document.querySelector('#back_top_top_btn');
 
     window.onscroll = () => {
         var windowY = window.scrollY;
+        btn.classList.add('block');
+        
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 
             // && windowY < scrollpos
+            
             ) {
             // btn.style.display = 'block';
             // var scrollHeight = window.height;
             // var scrollPossion = window.pageYOffset + window.scrollTop;
             var footHeight = window.innerHeight;
-
-            btn.classList.add('block');
-            btn.classList.remove('hidden');
+            
+            // btn.classList.remove('hidden');
+            if (windowY <= scrollpos) {
+                // btn.classList.remove('block');
+                btn.classList.remove('hidden_2');
+            }
+            else if (windowY > scrollpos){
+                btn.classList.add('hidden_2');
+            }
             // btn.classList.add('fix');
             if (window.scrollY < footHeight - 80) {
                 btn.classList.add('fix');
