@@ -5,11 +5,16 @@ var btn = document.querySelector('#back_top_top_btn');
 
     // btn.style.strokeDasharray = length;
     // btn.style.strokeDashoffset = length;
-
+var time;
+// window.onscroll(() => {
+//     if (time) {
+//         window.clearTimeout(time);
+//     }
+//     time = window.setTimeout(() => {},100);
+// });
     window.onscroll = () => {
         var windowY = window.scrollY;
         btn.classList.add('block');
-        
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 
             // && windowY < scrollpos
             
@@ -23,10 +28,25 @@ var btn = document.querySelector('#back_top_top_btn');
             if (windowY <= scrollpos) {
                 // btn.classList.remove('block');
                 btn.classList.remove('hidden_2');
+            //             if(time){
+            //     window.clearTimeout(time);
+            // }
+            // time = window.setTimeout(() =>{},100);
             }
             else if (windowY > scrollpos){
                 btn.classList.add('hidden_2');
+                if (time) {
+                window.clearTimeout(time);
             }
+            time = window.setTimeout(() => {
+                btn.classList.remove('hidden_2');
+            },50)
+            }
+            
+            
+            
+            // window.removeEventListener('scroll',()=>{});
+
             // btn.classList.add('fix');
             if (window.scrollY < footHeight - 80) {
                 btn.classList.add('fix');
@@ -53,7 +73,7 @@ var btn = document.querySelector('#back_top_top_btn');
         }
         window.removeEventListener('scroll',()=>{});
         scrollpos = windowY;
-    }
+    };
     btn.onclick = () => {
         var possion = height;
         var run = setInterval(() => {
