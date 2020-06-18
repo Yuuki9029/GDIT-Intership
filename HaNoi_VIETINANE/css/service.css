@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+body{
+    font-family: Arial;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto 0 auto;
+}
+.header-top-wrapper{
+    background: url(/images/header-top-bg.png) no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    border-top: 2px solid #fddd13;
+    overflow: hidden;
+    padding-top: 18px;
+}
+.logo{
+    background: url(/images/logo.png);
+    float: left;
+    display: block;
+    position: relative;
+    text-indent: -99999px;
+    width: 389px;
+    height: 39px;
+    overflow: hidden;
+}
+.logo h1{
+    margin: 0;
+}
+.header-top-right::before,
+.header-top-right::after{
+    content: '';
+    display: table;
+}
+.header-top-right::after{
+    clear: both;
+}
+.header-top-right{
+    float: right;
+}
+.cart{
+    float: left;
+    padding-top: 10px;
+}
+.cart-icon{
+    float: left;
+}
+.cart-number{
+    float: right;
+    color: #ffffff;
+}
+.hotline{
+    float: right;
+    color: #a9a9a9;
+    font-weight: bold;
+    text-align: right;
+}
+.hotline-info{
+    float: left;
+}
+.notice {
+    background: #2f2f2f;
+    text-align: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 10px;
+    float: left;
+}
+.notice a{
+    color: #545454;
+}
+.hot-title p{
+    float: right;
+    color: #646464;
+}
+.hotline-number a{
+    font-size: 19.65px;
+    color: #ffdd02;
+}
+.hotline-icon{
+    float: right;
+}
+.header-navbar{
+    background: url(/images/top-nav-bg.png) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.navigation-list li{
+    display: inline;
+    border-right: 1px solid #020202 ;
+}
+
+.navigation-list{
+    margin: 0;
+    padding: 12px 0px 15px 0px;
+}
+.navigation-list .home{
+    background: url(/images/home.png) no-repeat;
+}
+.navigation-list .desktop-pc{
+    background: url(/images/computer-icon.png) no-repeat;
+}
+.navigation-list .laptop{
+    background: url(/images/camera-icon.png) no-repeat;
+}
+.navigation-list .mobile{
+    background: url(/images/mobile-icon.png) no-repeat;
+}
+.navigation-list .office{
+    background: url(/images/print-icon.png) no-repeat;
+}
+.navigation-list .network{
+    background: url(/images/wifi-router-icon.png) no-repeat;
+}
