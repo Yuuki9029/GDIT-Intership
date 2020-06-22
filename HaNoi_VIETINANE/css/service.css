@@ -37,7 +37,7 @@ body{
     -moz-background-size: cover;
     border-top: 2px solid #fddd13;
     overflow: hidden;
-    padding-top: 18px;
+    padding: 18px 0 17px 0  ;
 }
 .logo{
     background: url(/images/logo.png);
@@ -65,23 +65,67 @@ body{
 }
 .cart{
     float: left;
-    padding-top: 10px;
+    padding: 10px 16px 0 0;
 }
 .cart-icon{
     float: left;
+    padding: 4px 15px 0 0;
 }
 .cart-number{
-    float: right;
+    float: left;
     color: #ffffff;
+    padding: 6px 15px 0 0;
+}
+.cart-number a:hover{
+    color: #ffdd02;
+}
+.cart-btn{
+    float: right;
+}
+.cart-btn button{
+    background: url(/images/cart-btn.png) no-repeat;
+    background-size: cover;
+    border: 0;
+    height: 7px;
+    cursor: pointer;
+}
+.cart-btn::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.cart button::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 .hotline{
     float: right;
     color: #a9a9a9;
     font-weight: bold;
     text-align: right;
+    border-left: 1px solid #2b2929;
+    padding-left: 17px;
+    position: relative;
+}
+.hotline::after{
+    display: table;
+    content: '';
+    clear: both;
 }
 .hotline-info{
     float: left;
+    padding: 3px 27px 0 0;
+}
+.hotline-title::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.hot-title::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 .notice {
     background: #2f2f2f;
@@ -90,13 +134,23 @@ body{
     width: 18px;
     border-radius: 10px;
     float: left;
+    margin: -3px 0 0 38px;
+    cursor: pointer;
 }
 .notice a{
     color: #545454;
 }
+.notice:hover, .notice a:hover{
+    background: #ffdd02;
+    color: #ffff;
+}
 .hot-title p{
     float: right;
-    color: #646464;
+    color: #a9a9a9;
+    font-weight: bold;
+}
+.hotline-number{
+    padding: 2px 0px 0px 0px;
 }
 .hotline-number a{
     font-size: 19.65px;
@@ -104,6 +158,9 @@ body{
 }
 .hotline-icon{
     float: right;
+    position: relative;
+    right: 8px;
+    top: 4px;
 }
 .header-navbar{
     background: url(/images/top-nav-bg.png) no-repeat;
@@ -151,6 +208,41 @@ body{
 .navigation-list .network{
     background: url(/images/wifi-router-icon.png) no-repeat 21px 9px;
     padding-left: 64px;
+}
+.navigation-list .home:hover{
+    background: url(/images/home-hover.png) no-repeat 26px 13px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
+}
+.navigation-list .desktop-pc:hover{
+    background: url(/images/computer-icon-hover.png) no-repeat 21px 14px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
+}
+.navigation-list .laptop:hover{
+    background: url(/images/laptop-icon-hover.png) no-repeat 21px 14px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
+}
+.navigation-list .camera:hover{
+    background: url(/images/camera-icon-hover.png)  no-repeat 26px 15px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
+}
+.navigation-list .mobile:hover{
+    background: url(/images/mobile-icon-hover.png) no-repeat 27px 10px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
+}
+.navigation-list .office:hover{
+    background: url(/images/print-icon-hover.png)  no-repeat 25px 13px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
+}
+.navigation-list .network:hover{
+    background: url(/images/wifi-router-icon-hover.png) no-repeat 21px 9px;
+    border-bottom: solid 1px #ffdd02;
+    color: #ffdd02;
 }
 /* Main */
 .main::after{
@@ -318,8 +410,47 @@ body{
     padding-bottom: 48px;
     margin-right: 20px;
 }
+.slider::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.slide-show::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.slide-content::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 .slide-img-4, .slide-img-8, .slide-img-12{
     margin: 0;
+}
+.slide-img-9, .slide-img-10, .slide-img-11, .slide-img-12{
+    padding: 0;
+}
+.slider{
+    padding-bottom: 30px;
+}
+.page-btn{
+    text-align: right;
+    padding-bottom: 30px;
+}
+.page-btn button{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background: #ffff;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    margin: 0 0px 0 4px;
+    cursor: pointer;
+}
+.page-btn button:hover{
+    background: #ebc90a;
+    color: #ffff;
 }
 /* Footer */
 .footer-navigation-wrapper{
@@ -345,6 +476,9 @@ body{
     float: left;
     font-size: 12px;
 }
+.footer-left a:hover{
+    color: #ffdd02;
+}
 .footer-left::after{
     content: '';
     display: table;
@@ -367,7 +501,6 @@ body{
 }
 .footer-right{
     float: right;
-    margin-right: -10px;
 }
 .footer-right::after{
     content: '';
@@ -388,30 +521,28 @@ body{
     position: relative;
 }
 #search-field{
-    width: 300px;
+    width: 248px;
     height: 33px;
-    border-radius: 7px;
+    border-radius: 7px 0 0 7px;
     background: #272727;
     border: solid 1px #505050;
 }
 input[type="search"]{
     color: #a6a6a6;
     font-size: 12px;
-    padding-left: 14px;
+    padding-left: 20px;
 }
 input::placeholder{
     color: #a6a6a6;
     font-size: 12px;
-    padding-left: 14px;
 }
 #search-btn{
     background: #ffdd02 url(/images/arrow.png) no-repeat 18px 10px;
-    height: 31px;
+    height: 33px;
     width: 51px;
     position: absolute;
     border: none;
     border-radius: 0 7px 7px 0;
-    right: 0;
     cursor: pointer;
 }
 .footer-bottom{
