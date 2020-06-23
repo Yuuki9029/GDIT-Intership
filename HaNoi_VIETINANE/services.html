@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/service.css">
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <title>HaNoi-VIENTIANE</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
                         <div class="hotline">
                             <div class="hotline-info">
                                 <div class="hotline-title">
-                                    <div class="notice">
+                                    <div class="notice" id="notice">
                                         <a href="#">&#33;</a>
                                     </div>
                                     <div class="hot-title">
@@ -46,9 +46,6 @@
                             <div class="hotline-icon">
                                 <img src="./images/phone-call.png" alt="hotline">
                             </div>
-                            <div class="notice contact">
-                                <div class="address"></div>
-                            </div>
                         </div>
                     </div>    
                 </div>
@@ -56,15 +53,19 @@
             <div class="header-navbar">
                 <div class="container">
                     <ul class="navigation-list">
-                        <a href="#"><li class="home">&nbsp; </li></a>
-                        <a href="#"><li class="desktop-pc">DESKTOP PC</li></a> 
-                        <a href="#"><li class="laptop">LAPTOP</li></a> 
-                        <a href="#"><li class="camera">CAMERA</li></a> 
-                        <a href="#"><li class="mobile">MOBILE ACCESSORIES</li></a> 
-                        <a href="#"><li class="office">OFFICE EQUIPMENT</li></a> 
-                        <a href="#"><li class="network">NETWORK</li></a> 
+                        <li class="home"><a href="#">&nbsp; </a></li>
+                        <li class="desktop-pc"><a href="#">DESKTOP PC</a></li> 
+                        <li class="laptop"><a href="#">LAPTOP</a></li> 
+                        <li class="camera"><a href="#">CAMERA</a></li> 
+                        <li class="mobile"><a href="#">MOBILE ACCESSORIES</a></li> 
+                        <li class="office"><a href="#">OFFICE EQUIPMENT</a></li> 
+                        <li class="network"><a href="#">NETWORK</a></li> 
                     </ul>
                 </div>
+            </div>
+            <div class="notice-contact" id="notice-contact">
+                <div class="address"><p>Vieng Chaleune, Vientiane</p></div>
+                <div class="notice-mail"><a href="mailto:contact@htcompany.co">contact@htcompany.co</a></div>
             </div>
         </div>
         <div class="main">
@@ -73,12 +74,12 @@
                     <div class="side-bar">
                         <div class="side-navigation">
                             <ul>
-                                <a href="#"><li class="thiet-ke-web">Tư vấn thiết kế Website</li></a>
-                                <a href="#"><li class="lap-he-thong-mang">Lắp đặt hệ thống mạng </li></a>
-                                <a href="#"><li class="xay-dung-phan-mem">Tư vấn xây dựng phần mềm</li></a> 
-                                <a href="#"><li class="thay-muc-in">Thay mực máy in&#44; máy fax</li></a> 
-                                <a href="#"><li class="sua-chua-may-tinh">Sửa chữa máy vi tính&#44; laptop</li></a>
-                                <a href="#"><li class="lap-camera">Lắp đặt hệ thống camera</li></a>
+                                <li class="thiet-ke-web"><a href="#">Tư vấn thiết kế Website</a></li>
+                                <li class="lap-he-thong-mang"><a href="#">Lắp đặt hệ thống mạng </a></li>
+                                <li class="xay-dung-phan-mem"><a href="#">Tư vấn xây dựng phần mềm</a></li> 
+                                <li class="thay-muc-in"><a href="#">Thay mực máy in&#44; máy fax</a></li> 
+                                <li class="sua-chua-may-tinh"><a href="#">Sửa chữa máy vi tính&#44; laptop</a></li>
+                                <li class="lap-camera"><a href="#">Lắp đặt hệ thống camera</a></li>
                             </ul>
                         </div>
                     </div>
@@ -221,10 +222,10 @@
                         <div class="social-network">
                             <h3>THEO DÕI CHÚNG TÔI TRÊN MẠNG XÃ HỘI</h3>
                             <ul>
-                                <li class="facebook"><a href="#"><img src="./images/facebook.png" alt="facebook"></a></li>
-                                <li class="twitter"><a href="#"><img src="./images/twitter.png" alt="twitter"></a></li>
-                                <li class="google"><a href="#"><img src="./images/google.png" alt="google"></a></li>
-                                <li class="youtube"><a href="#"><img src="./images/youtube.png" alt="youtube"></a></li>
+                                <li class="facebook"><a href="#" title="facebook"><img src="./images/facebook.png" alt="facebook"></a></li>
+                                <li class="twitter"><a href="#" title="twitter"><img src="./images/twitter.png" alt="twitter"></a></li>
+                                <li class="google"><a href="#" title="google++"><img src="./images/google.png" alt="google"></a></li>
+                                <li class="youtube"><a href="#" title="youtube"><img src="./images/youtube.png" alt="youtube"></a></li>
                             </ul>
                         </div>
                         <div class="mail">
@@ -251,5 +252,6 @@
             </div>
         </div>
     </div>
+    <script src="/js/notice.js"></script>
 </body>
 </html>
