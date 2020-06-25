@@ -136,6 +136,32 @@
     min-width: 19px;
     min-height: 19px;
     cursor: pointer;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button::before{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+    content: '\2022';
+}
+.slick-dots li.slick-active button:before{
+    opacity: 0.75;
+    color: black;
 }
 .slick-dots li button:hover{
     background: #ffffff;

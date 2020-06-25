@@ -13,6 +13,9 @@ a{
 p{
     margin: 0;
 }
+h2{
+    margin: 0;
+}
 h3{
     margin: 0;
 }
@@ -313,6 +316,12 @@ body{
     display: block;
     width: 189px;
     height: 146px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 94px 21px 0 21px;
+    line-height: 20px;
 }
 .tu-van-thiet-ke-web a{
     background: #73c814 url(/images/web-home-icon.png) no-repeat 62px 18px;
@@ -333,7 +342,77 @@ body{
     background: #f1c40f url(/images/Camera-icon-menu.png) no-repeat 83px 30px;
 }
 
-
+/* Main */
+.main-wrapper{
+    background: #ffff;
+    overflow: hidden;
+}
+.main-content{
+    width: 879px;
+    float: left;
+}
+.desktop-content::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* .desktop-list , .laptop-list, .camera-list, .mobile-list{
+    width: 25%;
+} */
+.desktop-list li, .laptop-list li, .camera-list li, .mobile-list li{
+    display: inline-block;
+    width: 24%;
+}
+/* Side */
+.side-content{
+    overflow: hidden;
+    border-left: 1px solid #f2f2f2;
+}
+.why{
+    border-bottom: 1px solid #f2f2f2;
+}
+.why-header{
+    padding: 17px 0px 0 55px;
+}
+.why-list p{
+    font-weight: bold;
+    padding: 30px 11px 12px 115px;
+    line-height: 21px;
+    font-size: 13px;
+}
+.why-list p:last-child{
+    padding-bottom: 0;
+}
+.why-1{
+    background: url(/images/ship.png) no-repeat 13px 11px;
+}
+.why-2{
+    background: url(/images/bao-hanh.png) no-repeat 19px 12px;
+}
+.why-3{
+    background: url(/images/phan-mem.png) no-repeat 27px 21px;
+}
+.why-4{
+    background: url(/images/sale.png) no-repeat 31px 27px;
+}
+.why-5{
+    background: url(/images/nhan-lai-hang.png) no-repeat 15px 10px;
+}
+#why-1{
+    color: #297aee;
+}
+#why-2{
+    color: #be242b;
+}
+#why-3{
+    color: #73c814;
+}
+#why-4{
+    color: #f58d01;
+}
+#why-5{
+    color: #a469bd;
+}
 /* Footer */
 .footer-navigation-wrapper{
     border-top: solid 3px #ffdd02;
