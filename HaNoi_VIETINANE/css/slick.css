@@ -121,51 +121,28 @@
     margin: 0;
     float: right;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 8px;
+    right: 16px;
 }
 .slick-dots li{
     float: left;
     margin-left: 1px;
+    padding-right: 3px;
 }
 .slick-dots li a{
     display: inline-block;
 }
 .slick-dots li button{
-    border: 1px solid #e0e0e0;
-    min-width: 19px;
-    min-height: 19px;
+    border: none;
+    width: 14px;
+    height: 14px;
     cursor: pointer;
-    color: transparent;
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    padding: 5px;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.slick-dots li button::before{
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    opacity: 0.25;
-    color: black;
-    content: '\2022';
-}
-.slick-dots li.slick-active button:before{
-    opacity: 0.75;
-    color: black;
+    text-indent: -999999px;
+    border-radius: 15px;
 }
 .slick-dots li button:hover{
-    background: #ffffff;
+    background: #525252;
 }
 .slick-active button{
-    background-color: #ffffff;
+    background-color: #525252;
 }
