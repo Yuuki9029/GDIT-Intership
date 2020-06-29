@@ -30,7 +30,7 @@ body{
     background: #e2e2e2;
 }
 .header-top-wrapper{
-    background: url(/images/header-top-bg.png) no-repeat;
+    background: url(../images/header-top-bg.png) no-repeat;
     background-size: cover;
     height: 100%;
     -webkit-background-size: cover;
@@ -40,7 +40,7 @@ body{
     padding: 18px 0 17px 0  ;
 }
 .logo{
-    background: url(/images/logo.png);
+    background: url(../images/logo.png);
     float: left;
     display: block;
     position: relative;
@@ -86,7 +86,7 @@ body{
     float: right;
 }
 .cart-btn button{
-    background: url(/images/cart-btn.png) no-repeat;
+    background: url(../images/cart-btn.png) no-repeat;
     background-size: cover;
     border: 0;
     height: 7px;
@@ -177,10 +177,10 @@ body{
 }
 .address{
     padding: 0 0 12px 26px;
-    background: url(/images/address-icon.png) no-repeat;
+    background: url(../images/address-icon.png) no-repeat;
 }
 .notice-mail{
-    background: url(/images/Email-icon.png) no-repeat;
+    background: url(../images/Email-icon.png) no-repeat;
     padding-left: 26px;
 }
 .notice-contact a, .notice-contact p{
@@ -199,7 +199,7 @@ body{
     bottom: 65px;
 }
 .header-navbar{
-    background: url(/images/top-nav-bg.png) no-repeat;
+    background: url(../images/top-nav-bg.png) no-repeat;
     background-size: cover;
     height: 100%;
 }
@@ -218,72 +218,72 @@ body{
     margin: 0;
 }
 .navigation-list .home a{
-    background: url(/images/home.png) no-repeat 27px 13px;
+    background: url(../images/home.png) no-repeat 27px 13px;
     padding-left: 25px;
     padding-right: 39px;
 }
 .navigation-list .desktop-pc a{
-    background: url(/images/computer-icon.png) no-repeat 21px 14px;
+    background: url(../images/computer-icon.png) no-repeat 21px 14px;
     padding-left: 59px;
     padding-right: 19px;
 }
 .navigation-list .laptop a{
-    background: url(/images/laptop-icon.png) no-repeat 20px 15px;
+    background: url(../images/laptop-icon.png) no-repeat 20px 15px;
     padding-left: 53px;
     padding-right: 21px;
 }
 .navigation-list .camera a{
-    background: url(/images/camera-icon.png) no-repeat 24px 15px;
+    background: url(../images/camera-icon.png) no-repeat 24px 15px;
     padding-right: 22px;
     padding-left: 55px;
 }
 .navigation-list .mobile a{
-    background: url(/images/mobile-icon.png) no-repeat 25px 10px;
+    background: url(../images/mobile-icon.png) no-repeat 25px 10px;
     padding-right: 14px;
     padding-left: 54px ;
 }
 .navigation-list .office a{
-    background: url(/images/print-icon.png) no-repeat 25px 13px;
+    background: url(../images/print-icon.png) no-repeat 25px 13px;
     padding-right: 20px;
     padding-left: 58px;
 }
 .navigation-list .network a{
-    background: url(/images/wifi-router-icon.png) no-repeat 21px 9px;
+    background: url(../images/wifi-router-icon.png) no-repeat 21px 9px;
     padding-left: 64px;
     padding-right: 30px;
 }
 .navigation-list .home a:hover{
-    background: url(/images/home-hover.png) no-repeat 27px 13px;
+    background: url(../images/home-hover.png) no-repeat 27px 13px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
 .navigation-list .desktop-pc a:hover{
-    background: url(/images/computer-icon-hover.png) no-repeat 21px 14px;
+    background: url(../images/computer-icon-hover.png) no-repeat 21px 14px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
 .navigation-list .laptop a:hover{
-    background: url(/images/laptop-icon-hover.png) no-repeat 20px 15px;
+    background: url(../images/laptop-icon-hover.png) no-repeat 20px 15px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
 .navigation-list .camera a:hover{
-    background: url(/images/camera-icon-hover.png)  no-repeat 24px 15px;
+    background: url(../images/camera-icon-hover.png)  no-repeat 24px 15px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
 .navigation-list .mobile a:hover{
-    background: url(/images/mobile-icon-hover.png) no-repeat 25px 10px;
+    background: url(../images/mobile-icon-hover.png) no-repeat 25px 10px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
 .navigation-list .office a:hover{
-    background: url(/images/print-icon-hover.png)  no-repeat 25px 13px;
+    background: url(../images/print-icon-hover.png)  no-repeat 25px 13px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
 .navigation-list .network a:hover{
-    background: url(/images/wifi-router-icon-hover.png) no-repeat 21px 9px;
+    background: url(../images/wifi-router-icon-hover.png) no-repeat 21px 9px;
     border-bottom: solid 1px #ffdd02;
     color: #ffdd02;
 }
@@ -326,51 +326,51 @@ body{
     display: block;
 }
 .thiet-ke-web a{
-    background: url(/images/web-icon.png) no-repeat 22px 15px;
+    background: url(../images/web-icon.png) no-repeat 22px 15px;
     padding: 24px 0 22px 74px;
     
 }
 .lap-he-thong-mang a{
-    background: url(/images/wifi-router-icon-2.png) no-repeat  19px 19px;
+    background: url(../images/wifi-router-icon-2.png) no-repeat  19px 19px;
     padding: 28px 0 21px 74px;
 }
 .xay-dung-phan-mem a{
-    background: url(/images/pc-icon-2.png) no-repeat 22px 21px;
+    background: url(../images/pc-icon-2.png) no-repeat 22px 21px;
     padding: 28px 0 23px 74px;
 }
 .thay-muc-in a{
-    background: url(/images/print-icon-2.png) no-repeat 19px 19px;
+    background: url(../images/print-icon-2.png) no-repeat 19px 19px;
     padding: 28px 0 23px 74px;
 }
 .sua-chua-may-tinh a{
-    background: url(/images/settin-pc-icon.png) no-repeat 22px 18px;
+    background: url(../images/settin-pc-icon.png) no-repeat 22px 18px;
     padding: 26px 0 20px 74px;
 }
 .lap-camera a{
-    background: url(/images/wifi-router-icon-3.png) no-repeat 20px 23px;
+    background: url(../images/wifi-router-icon-3.png) no-repeat 20px 23px;
     padding: 28px 0 24px 74px;
 }
 .side-bar a{
     color: #212120;
 }
 .thiet-ke-web a:hover{
-    background: #ffdd02 url(/images/web-icon.png) no-repeat 22px 15px;
+    background: #ffdd02 url(../images/web-icon.png) no-repeat 22px 15px;
 
 }
 .lap-he-thong-mang a:hover{
-    background: #ffdd02 url(/images/wifi-router-icon-2.png) no-repeat  19px 19px;
+    background: #ffdd02 url(../images/wifi-router-icon-2.png) no-repeat  19px 19px;
 }
 .xay-dung-phan-mem a:hover{
-    background: #ffdd02 url(/images/pc-icon-2.png) no-repeat 22px 21px;
+    background: #ffdd02 url(../images/pc-icon-2.png) no-repeat 22px 21px;
 }
 .thay-muc-in a:hover{
-    background: #ffdd02 url(/images/print-icon-2.png) no-repeat 19px 19px;
+    background: #ffdd02 url(../images/print-icon-2.png) no-repeat 19px 19px;
 }
 .sua-chua-may-tinh a:hover{
-    background: #ffdd02 url(/images/settin-pc-icon.png) no-repeat 22px 18px;
+    background: #ffdd02 url(../images/settin-pc-icon.png) no-repeat 22px 18px;
 }
 .lap-camera a:hover{
-    background: #ffdd02 url(/images/wifi-router-icon-3.png) no-repeat 20px 23px;
+    background: #ffdd02 url(../images/wifi-router-icon-3.png) no-repeat 20px 23px;
 }
 
 
@@ -425,7 +425,7 @@ body{
     font-weight: bold;
     font-size: 15px;
     width: 100%;
-    background: url(/images/xem-them-bg.png) no-repeat;
+    background: url(../images/xem-them-bg.png) no-repeat;
     background-size: cover;
     border: 0;
     padding: 15px 0 13px 0;
@@ -581,7 +581,7 @@ input::placeholder{
     font-size: 12px;
 }
 #search-btn{
-    background: #ffdd02 url(/images/arrow.png) no-repeat 18px 10px;
+    background: #ffdd02 url(../images/arrow.png) no-repeat 18px 10px;
     height: 33px;
     width: 51px;
     position: absolute;
